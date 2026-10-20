@@ -44,7 +44,6 @@
         .font-serif-title {
             font-family: 'Cinzel', serif;
         }
-        /* Mobile Pulse Animation for WhatsApp */
         @keyframes pulse-ring {
             0% { transform: scale(0.95); opacity: 0.8; }
             50% { transform: scale(1.15); opacity: 0.4; }
@@ -66,13 +65,14 @@
     <header class="sticky top-0 z-40 bg-greenwall-dark/90 backdrop-blur-md border-b border-greenwall-accent/30">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
+                <!-- Green Wall Official Style Logo -->
                 <div class="flex items-center space-x-3">
-                    <div class="w-10 h-10 rounded-full border border-greenwall-gold flex items-center justify-center text-greenwall-gold">
+                    <div class="w-10 h-10 rounded-full border-2 border-greenwall-gold flex items-center justify-center bg-greenwall-deep text-greenwall-gold shadow-lg">
                         <i data-lucide="leaf" class="w-5 h-5"></i>
                     </div>
                     <div>
                         <span class="font-serif-title text-2xl font-bold tracking-wider text-white block">GREEN WALL</span>
-                        <span class="text-[9px] tracking-[0.2em] text-greenwall-gold uppercase block font-medium">მწვანე კედელი</span>
+                        <span class="text-[9px] tracking-[0.25em] text-greenwall-gold uppercase block font-semibold">მწვანე კედელი</span>
                     </div>
                 </div>
 
@@ -128,7 +128,7 @@
 
                 <div class="lg:col-span-5 relative">
                     <div class="rounded-3xl overflow-hidden border-2 border-greenwall-gold/30 shadow-2xl relative">
-                        <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?q=80&w=1000&auto=format&fit=crop" alt="Green Wall Architecture" class="w-full h-[400px] sm:h-[480px] object-cover">
+                        <img src="images/hero.jpg" onerror="this.src='https://images.unsplash.com/photo-1512428559087-560fa5ceab42?q=80&w=1000&auto=format&fit=crop'" alt="Green Wall Architecture" class="w-full h-[400px] sm:h-[480px] object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent p-6 flex flex-col justify-end">
                             <span class="text-greenwall-gold text-xs font-bold uppercase" data-i18n="featured_tag">რჩეული B2B პროექტი</span>
                             <h3 class="font-serif-title text-xl font-bold text-white">Marjan Plaza Executive Atrium</h3>
@@ -163,7 +163,7 @@
                         
                         <!-- Dynamic Logo / Brand Text Overlay -->
                         <div id="previewLogoText" class="relative z-10 font-serif-title text-2xl sm:text-4xl font-bold text-white tracking-widest drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)] border-2 border-white/20 px-6 py-3 rounded-xl backdrop-blur-xs text-center">
-                            YOUR LOGO HERE
+                            GREEN WALL
                         </div>
                     </div>
                 </div>
@@ -206,7 +206,7 @@
                     <!-- Logo Input -->
                     <div class="space-y-2">
                         <label class="text-xs font-semibold uppercase text-gray-300" data-i18n="step_2">2. კომპანიის სახელი / ლოგო</label>
-                        <input type="text" id="logoTextInput" value="YOUR LOGO HERE" oninput="updateLogoText(this.value)" class="w-full bg-greenwall-dark border border-white/20 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-greenwall-gold">
+                        <input type="text" id="logoTextInput" value="GREEN WALL" oninput="updateLogoText(this.value)" class="w-full bg-greenwall-dark border border-white/20 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-greenwall-gold">
                     </div>
 
                     <!-- Price Estimate & Instant Order -->
@@ -264,7 +264,7 @@
         </div>
     </section>
 
-    <!-- GLOBAL EXPORT & MODULAR KITS SECTION -->
+    <!-- GLOBAL EXPORT SECTION -->
     <section id="export" class="py-20 bg-greenwall-deep border-b border-greenwall-accent/20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-12">
             <div class="max-w-2xl mx-auto space-y-3">
@@ -306,7 +306,7 @@
             <div class="space-y-4">
                 <div class="bg-greenwall-dark p-6 rounded-2xl border border-white/10 space-y-2">
                     <h3 class="font-bold text-base text-white" data-i18n="faq_q1">საჭიროებს თუ არა სტაბილიზებული ხავსი მორწყვას ან განათებას?</h3>
-                    <p class="text-xs text-gray-400 leading-relaxed" data-i18n="faq_a1">არა, სტაბილიზებული ხავსი არ საჭიროებს მორწყვას, ნიადაგს ან მზის სინათლეს. ის ინარჩუნებს პირვანდელ იერსახესა და რბილ ფაქტურას 5–10 წლის განმავლობაში.</p>
+                    <p class="text-xs text-gray-400 leading-relaxed" data-i18n="faq_a1">არა, სტაბილიზებული ხავსი არ საჭიროებს მორწყვას, ნიადაგს ან მზის сინათლეს. ის ინარჩუნებს პირვანდელ იერსახესა და რბილ ფაქტურას 5–10 წლის განმავლობაში.</p>
                 </div>
                 <div class="bg-greenwall-dark p-6 rounded-2xl border border-white/10 space-y-2">
                     <h3 class="font-bold text-base text-white" data-i18n="faq_q2">როგორ ხდება B2B პროექტის ხარჯთაღრიცხვა და მონტაჟი?</h3>
@@ -337,7 +337,7 @@
         </a>
     </div>
 
-    <!-- JavaScript Translations & Live Configurator -->
+    <!-- JavaScript Translations & Live Configurator Engine -->
     <script>
         const translations = {
             ka: {
@@ -512,7 +512,7 @@
         }
 
         function updateLogoText(text) {
-            document.getElementById('previewLogoText').innerText = text.toUpperCase() || 'YOUR LOGO HERE';
+            document.getElementById('previewLogoText').innerText = text.toUpperCase() || 'GREEN WALL';
         }
 
         function calculatePrice() {
