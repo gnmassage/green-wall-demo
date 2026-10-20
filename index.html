@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Wall | Architectural Biophilic Solutions & Configurator</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        greenwall: {
+                            dark: '#0A1F14',
+                            deep: '#123322',
+                            accent: '#2A5C40',
+                            gold: '#C5A059',
+                            light: '#F4F7F5',
+                            card: '#1A3D2A'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Cinzel', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0A1F14;
+            color: #F4F7F5;
+        }
+        .font-serif-title {
+            font-family: 'Cinzel', serif;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-greenwall-gold selection:text-black">
+
+    <!-- Global B2B Bar -->
+    <div class="bg-greenwall-gold text-black text-xs py-2 px-4 text-center font-bold tracking-wider uppercase">
+        🏛️ B2B ARCHITECTURAL PORTAL: DOWNLOAD 3D CAD / REVIT BIM MODELS FOR YOUR PROJECTS
+    </div>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-40 bg-greenwall-dark/90 backdrop-blur-md border-b border-greenwall-accent/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-full border border-greenwall-gold flex items-center justify-center text-greenwall-gold">
+                        <i data-lucide="leaf" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <span class="font-serif-title text-2xl font-bold tracking-wider text-white block">GREEN WALL</span>
+                        <span class="text-[9px] tracking-[0.2em] text-greenwall-gold uppercase block font-medium">Biophilic Architecture</span>
+                    </div>
+                </div>
+
+                <nav class="hidden md:flex items-center space-x-8 text-xs font-semibold uppercase tracking-wider text-gray-300">
+                    <a href="#configurator" class="hover:text-greenwall-gold transition-colors">3D Studio Configurator</a>
+                    <a href="#architects" class="hover:text-greenwall-gold transition-colors">Architect Portal</a>
+                    <a href="#export" class="hover:text-greenwall-gold transition-colors">Global Export Kits</a>
+                    <a href="#projects" class="hover:text-greenwall-gold transition-colors">Case Studies</a>
+                </nav>
+
+                <div class="flex items-center space-x-4">
+                    <button onclick="document.getElementById('configurator').scrollIntoView({behavior: 'smooth'})" class="bg-greenwall-gold text-black text-xs font-bold uppercase tracking-wider px-5 py-2.5 rounded-full hover:bg-white transition-all shadow-lg flex items-center space-x-2">
+                        <i data-lucide="sliders" class="w-4 h-4"></i>
+                        <span>Build Your Wall</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-24 overflow-hidden border-b border-greenwall-accent/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center space-x-2 bg-greenwall-deep border border-greenwall-gold/30 px-4 py-1.5 rounded-full text-greenwall-gold text-xs font-semibold tracking-widest uppercase">
+                        <i data-lucide="award" class="w-4 h-4"></i>
+                        <span>International B2B Biophilic Standards</span>
+                    </div>
+                    <h1 class="font-serif-title text-4xl sm:text-6xl font-bold leading-tight text-white">
+                        Transform Spaces with Precision Living Architecture
+                    </h1>
+                    <p class="text-gray-400 text-base sm:text-lg leading-relaxed max-w-2xl">
+                        პრემიუმ კლასის ვერტიკალური გამწვანება, სტაბილიზირებული ხავსი და ინტეგრირებული 3D ლოგოები ოფისებისთვის, სასტუმროებისა და არქიტექტურული პროექტებისთვის.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <a href="#configurator" class="bg-greenwall-gold text-black px-8 py-4 rounded-full font-bold uppercase text-xs tracking-wider text-center hover:bg-white transition-all shadow-xl">
+                            გახსენით 3D კონფიგურატორი
+                        </a>
+                        <a href="#architects" class="border border-greenwall-gold/50 text-white px-8 py-4 rounded-full font-bold uppercase text-xs tracking-wider text-center hover:bg-greenwall-deep transition-all">
+                            B2B 3D CAD ფაილები (Revit)
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 relative">
+                    <div class="rounded-3xl overflow-hidden border-2 border-greenwall-gold/30 shadow-2xl relative">
+                        <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?q=80&w=1000&auto=format&fit=crop" alt="Green Wall Architecture" class="w-full h-[450px] object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent p-6 flex flex-col justify-end">
+                            <span class="text-greenwall-gold text-xs font-bold uppercase">Featured B2B Project</span>
+                            <h3 class="font-serif-title text-xl font-bold text-white">Marjan Plaza Executive Atrium</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIVE INTERACTIVE WALL CONFIGURATOR SECTION (THE WOW EFFECT) -->
+    <section id="configurator" class="py-24 bg-greenwall-deep border-b border-greenwall-accent/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+                <span class="text-greenwall-gold text-xs font-bold uppercase tracking-widest">Interactive Design Studio</span>
+                <h2 class="font-serif-title text-3xl sm:text-5xl font-bold text-white">ააწყვეთ თქვენი მწვანე კედელი რეალურ დროში</h2>
+                <p class="text-gray-400 text-sm">აირჩიეთ ხავსის ტექსტურა, მიუთითეთ ზომები და ჩასვით თქვენი კომპანიის ლოგო</p>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-8 items-start bg-greenwall-dark p-6 sm:p-10 rounded-3xl border border-greenwall-gold/20 shadow-2xl">
+                
+                <!-- Live Preview Canvas -->
+                <div class="lg:col-span-7 space-y-4">
+                    <div class="text-xs text-gray-400 flex justify-between items-center">
+                        <span>LIVE PREVIEW:</span>
+                        <span id="wallDimensionsDisplay" class="text-greenwall-gold font-bold">2.5m × 1.5m (3.75 m²)</span>
+                    </div>
+
+                    <!-- Visual Wall Simulator Container -->
+                    <div id="wallCanvasContainer" class="relative h-[350px] sm:h-[420px] rounded-2xl overflow-hidden border-4 border-greenwall-card shadow-inner flex items-center justify-center transition-all" style="background-image: url('https://images.unsplash.com/photo-1545241047-6083a3684587?q=80&w=1000&auto=format&fit=crop'); background-size: cover;">
+                        
+                        <div class="absolute inset-0 bg-black/30"></div>
+                        
+                        <!-- Dynamic Logo / Brand Text Overlay -->
+                        <div id="previewLogoText" class="relative z-10 font-serif-title text-3xl sm:text-5xl font-bold text-white tracking-widest drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)] border-2 border-white/20 px-6 py-3 rounded-xl backdrop-blur-xs">
+                            YOUR LOGO HERE
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Configurator Controls -->
+                <div class="lg:col-span-5 space-y-6 bg-greenwall-card p-6 rounded-2xl border border-greenwall-accent/40">
+                    <h3 class="font-serif-title text-xl font-bold text-greenwall-gold flex items-center space-x-2">
+                        <i data-lucide="sliders" class="w-5 h-5"></i>
+                        <span>კონფიგურაციის პარამეტრები</span>
+                    </h3>
+
+                    <!-- Texture Selection -->
+                    <div class="space-y-2">
+                        <label class="text-xs font-semibold uppercase text-gray-300">1. მცენარე / ხავსის ტექსტურა</label>
+                        <div class="grid grid-cols-3 gap-2">
+                            <button onclick="updateTexture('moss', 'https://images.unsplash.com/photo-1545241047-6083a3684587?q=80&w=1000&auto=format&fit=crop')" class="p-2 bg-greenwall-dark rounded-xl border border-greenwall-gold/40 text-[10px] text-center font-bold hover:border-greenwall-gold">
+                                🌿 Emerald Moss
+                            </button>
+                            <button onclick="updateTexture('jungle', 'https://images.unsplash.com/photo-1512428559087-560fa5ceab42?q=80&w=1000&auto=format&fit=crop')" class="p-2 bg-greenwall-dark rounded-xl border border-white/10 text-[10px] text-center font-bold hover:border-greenwall-gold">
+                                🌴 Real-Touch Jungle
+                            </button>
+                            <button onclick="updateTexture('light', 'https://images.unsplash.com/photo-1604762524889-3e2fcc145683?q=80&w=1000&auto=format&fit=crop')" class="p-2 bg-greenwall-dark rounded-xl border border-white/10 text-[10px] text-center font-bold hover:border-greenwall-gold">
+                                🍃 Reindeer Lichen
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Dimensions Input -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="text-xs font-semibold uppercase text-gray-300">სიგანე (მეტრი)</label>
+                            <input type="number" id="wallWidth" value="2.5" step="0.5" onchange="calculatePrice()" class="w-full mt-1 bg-greenwall-dark border border-white/20 rounded-xl px-3 py-2 text-sm text-white focus:outline-none focus:border-greenwall-gold">
+                        </div>
+                        <div>
+                            <label class="text-xs font-semibold uppercase text-gray-300">სიმაღლე (მეტრი)</label>
+                            <input type="number" id="wallHeight" value="1.5" step="0.5" onchange="calculatePrice()" class="w-full mt-1 bg-greenwall-dark border border-white/20 rounded-xl px-3 py-2 text-sm text-white focus:outline-none focus:border-greenwall-gold">
+                        </div>
+                    </div>
+
+                    <!-- Logo Input -->
+                    <div class="space-y-2">
+                        <label class="text-xs font-semibold uppercase text-gray-300">2. კომპანიის სახელი / ლოგო</label>
+                        <input type="text" id="logoTextInput" value="YOUR LOGO HERE" oninput="updateLogoText(this.value)" class="w-full bg-greenwall-dark border border-white/20 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-greenwall-gold">
+                    </div>
+
+                    <!-- Price Estimate & Instant Order -->
+                    <div class="pt-4 border-t border-white/10 flex justify-between items-center">
+                        <div>
+                            <span class="text-[10px] text-gray-400 uppercase block">სავარაუდო ღირებულება:</span>
+                            <span id="totalPrice" class="text-2xl font-bold text-greenwall-gold">1,875 ₾</span>
+                        </div>
+                        <button onclick="alert('თქვენი პროექტი შენახულია! B2B მენეჯერი დაგიკავშირდებათ.')" class="bg-greenwall-gold text-black font-bold text-xs uppercase px-6 py-3 rounded-xl hover:bg-white transition-all">
+                            მოითხოვეთ PDF ხარჯთაღრიცხვა
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ARCHITECT & DESIGNER PORTAL (REVIT / CAD BIM MODELS) -->
+    <section id="architects" class="py-20 bg-greenwall-dark border-b border-greenwall-accent/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <span class="text-greenwall-gold text-xs font-bold uppercase tracking-widest">Architects & Interior Designers Hub</span>
+                    <h2 class="font-serif-title text-3xl sm:text-4xl font-bold text-white">ჩასვით Green Wall-ის 3D მოდელები თქვენს პროექტებში</h2>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        არქიტექტორებისა და ინტერიერის დიზაინერებისთვის ვუზრუნველყოფთ მზა 3D CAD, Revit BIM და SketchUp ფაილებს. ჩასვით ჩვენი მოდელები თქვენს რენდერებში და მიიღეთ სპეციალური B2B პარტნიორული ფასდაკლება.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 pt-2">
+                        <div class="bg-greenwall-card p-4 rounded-xl border border-white/10 flex items-center space-x-3">
+                            <i data-lucide="box" class="w-8 h-8 text-greenwall-gold"></i>
+                            <div>
+                                <h4 class="font-bold text-xs text-white">Revit BIM (.rfa)</h4>
+                                <span class="text-[10px] text-gray-400">Download Pack</span>
+                            </div>
+                        </div>
+                        <div class="bg-greenwall-card p-4 rounded-xl border border-white/10 flex items-center space-x-3">
+                            <i data-lucide="layers" class="w-8 h-8 text-greenwall-gold"></i>
+                            <div>
+                                <h4 class="font-bold text-xs text-white">3DS Max / DWG</h4>
+                                <span class="text-[10px] text-gray-400">Download Pack</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-greenwall-card p-8 rounded-3xl border border-greenwall-gold/30 text-center space-y-4">
+                    <i data-lucide="file-check-2" class="w-12 h-12 text-greenwall-gold mx-auto"></i>
+                    <h3 class="font-serif-title text-xl font-bold text-white">გახდით Green Wall-ის აკრედიტებული პარტნიორი</h3>
+                    <p class="text-xs text-gray-400">მიიღეთ პირდაპირი წვდომა B2B კატალოგზე, ნიმუშების ნაკრებზე (Sample Kit) და პროექტების ხარჯთაღრიცხვის ექსპრეს-კალკულატორზე.</p>
+                    <button class="w-full bg-white text-black py-3 rounded-full font-bold text-xs uppercase hover:bg-greenwall-gold transition-all">
+                        არქიტექტორის კაბინეტში რეგისტრაცია
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GLOBAL EXPORT & MODULAR KITS SECTION -->
+    <section id="export" class="py-20 bg-greenwall-deep border-b border-greenwall-accent/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-12">
+            <div class="max-w-2xl mx-auto space-y-3">
+                <span class="text-greenwall-gold text-xs font-bold uppercase tracking-widest">Global Logistics</span>
+                <h2 class="font-serif-title text-3xl sm:text-4xl font-bold text-white">მოდულური პანელები გლობალური ექსპორტისთვის</h2>
+                <p class="text-gray-400 text-sm">სტანდარტიზებული, მსუბუქი მოდულური ხავსის პანელები, რომლებიც იგზავნება მსოფლიოს ნებისმიერ წერტილში და იწყობა მარტივად.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-3 gap-8">
+                <div class="bg-greenwall-dark p-6 rounded-2xl border border-white/10 text-left space-y-3">
+                    <div class="w-10 h-10 rounded-full bg-greenwall-card flex items-center justify-center text-greenwall-gold font-bold">50x50</div>
+                    <h3 class="font-bold text-lg text-white">Standard Panel Kit</h3>
+                    <p class="text-xs text-gray-400">იდეალურია მცირე ოფისებისა და მიღების ზონებისთვის (Reception).</p>
+                </div>
+                <div class="bg-greenwall-dark p-6 rounded-2xl border border-greenwall-gold/40 text-left space-y-3 relative">
+                    <span class="absolute top-4 right-4 bg-greenwall-gold text-black text-[9px] font-bold px-2 py-0.5 rounded uppercase">B2B Best Seller</span>
+                    <div class="w-10 h-10 rounded-full bg-greenwall-card flex items-center justify-center text-greenwall-gold font-bold">100x50</div>
+                    <h3 class="font-bold text-lg text-white">Commercial Modular Kit</h3>
+                    <p class="text-xs text-gray-400">სასტუმროების ჰოლებისა და კორპორატიული ატრიუმებისთვის.</p>
+                </div>
+                <div class="bg-greenwall-dark p-6 rounded-2xl border border-white/10 text-left space-y-3">
+                    <div class="w-10 h-10 rounded-full bg-greenwall-card flex items-center justify-center text-greenwall-gold font-bold">Custom</div>
+                    <h3 class="font-bold text-lg text-white">Bespoke 3D Wall Kit</h3>
+                    <p class="text-xs text-gray-400">ინდივიდუალური ზომები ინტეგრირებული 3D ლოგოებითა და განათებით.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-greenwall-dark py-12 border-t border-greenwall-accent/30 text-center text-xs text-gray-500">
+        <p>&copy; 2026 Green Wall • Biophilic Architecture Platform Demo. All rights reserved.</p>
+    </footer>
+
+    <!-- Configurator JavaScript Engine -->
+    <script>
+        function updateTexture(type, imageUrl) {
+            document.getElementById('wallCanvasContainer').style.backgroundImage = `url('${imageUrl}')`;
+        }
+
+        function updateLogoText(text) {
+            document.getElementById('previewLogoText').innerText = text.toUpperCase() || 'YOUR LOGO HERE';
+        }
+
+        function calculatePrice() {
+            const w = parseFloat(document.getElementById('wallWidth').value) || 0;
+            const h = parseFloat(document.getElementById('wallHeight').value) || 0;
+            const area = w * h;
+            const pricePerSqM = 500; // Average price in GEL per m²
+            const total = area * pricePerSqM;
+            
+            document.getElementById('wallDimensionsDisplay').innerText = `${w}m × ${h}m (${area.toFixed(2)} m²)`;
+            document.getElementById('totalPrice').innerText = `${total.toLocaleString()} ₾`;
+        }
+
+        lucide.createIcons();
+    </script>
+</body>
+</html>
